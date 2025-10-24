@@ -135,7 +135,5 @@ ImageView & TextView
 
 Architecture : MVC simplifiée (MainActivity → Adapter → Layout)
 
-🪄 Exemple de rendu visuel
-Mode Linéaire	Mode Grille
 
 	
