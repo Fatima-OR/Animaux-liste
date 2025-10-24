@@ -44,12 +44,20 @@ L’image centrée
 Les boutons d’action (supprimer, ajouter) superposés ou en bas de la carte.
 
 ⚙️ Fonctionnalités principales
+
 Fonction	Description
+
 🧭 Changement d’affichage	L’utilisateur peut choisir entre une liste linéaire ou une grille à l’aide des boutons radio.
+
 🐕 Affichage dynamique	Les animaux sont gérés dans une RecyclerView avec un Adapter Kotlin qui s’adapte selon le mode sélectionné.
+
 ➕ Ajout d’un animal	Un bouton permet d’ajouter un nouvel animal à la liste (ou d’afficher des détails).
+
 🗑️ Suppression d’un animal	Le bouton corbeille supprime la carte correspondante de la RecyclerView.
+
 💡 Design moderne	Interface pastel avec coins arrondis et ombrages doux (CardView + ConstraintLayout).
+
+
 🧩 Structure du projet
 app/
 
