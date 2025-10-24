@@ -1,4 +1,5 @@
 Liste des Animaux – Application Android Kotlin
+
 📱 Aperçu de l’application
 
 L’application "Liste des Animaux" affiche une collection d’animaux sous deux formats différents :
@@ -51,22 +52,39 @@ Fonction	Description
 💡 Design moderne	Interface pastel avec coins arrondis et ombrages doux (CardView + ConstraintLayout).
 🧩 Structure du projet
 app/
+
  ├── java/
+ 
  │   └── com.example.animaux/
+ 
  │       ├── MainActivity.kt
+ 
  │       ├── Animal.kt
+ 
  │       ├── AnimalAdapter.kt
+ 
  │       ├── AnimalViewHolder.kt
+ 
  │       └── DataProvider.kt
+ 
  ├── res/
+ 
  │   ├── layout/
+ 
  │   │   ├── activity_main.xml
+ 
  │   │   ├── item_animal_linear.xml
+ 
  │   │   └── item_animal_grid.xml
+ 
  │   ├── drawable/
+ 
  │   │   └── (images des animaux)
+ 
  │   └── values/
+ 
  │       └── colors.xml, styles.xml, strings.xml
+ 
  └── AndroidManifest.xml
 
 🧠 Code principal
