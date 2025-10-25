@@ -1,52 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="12dp"
+    android:background="#F5F5F5">
 
     <!-- Titre -->
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Liste des Animaux"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#000000"
-        android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:textColor="#333333"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp" />
 
-    <!-- Options d'affichage -->
-    <RadioGroup
-        android:id="@+id/rgAffichage"
+    <!-- Message sélection -->
+    <TextView
+        android:id="@+id/textSelection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:paddingBottom="4dp" />
+
+    <!-- Bouton global supprimer -->
+    <Button
+        android:id="@+id/buttonDeleteSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supprimer les éléments sélectionnés"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Choix Linear / Grid -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginBottom="16dp">
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp">
 
         <RadioButton
-            android:id="@+id/rbLineaire"
+            android:id="@+id/radioLinear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Linéaire"
-            android:checked="true"
-            android:layout_marginEnd="32dp" />
+            android:checked="true"/>
 
         <RadioButton
-            android:id="@+id/rbGrille"
+            android:id="@+id/radioGrid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Grille" />
-
+            android:text="Grille"/>
     </RadioGroup>
 
-    <!-- RecyclerView pour afficher la liste -->
+    <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvAnimaux"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="4dp" />
 
 </LinearLayout>
