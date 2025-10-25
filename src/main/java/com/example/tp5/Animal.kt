@@ -1,7 +1,7 @@
-package com.example.animaux
+package com.example.selection
 
 data class Animal(
-    val nom: String,
-    val espece: String,
+    val name: String,
+    val type: String,
     val imageResId: Int
 )
